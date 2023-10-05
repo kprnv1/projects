@@ -19,7 +19,8 @@ public class Main {
             System.out.println("Enter your placement (1-9):");
 
             int PlayerPosition = scanner.nextInt();
-            while (playerPositions.contains(PlayerPosition) || CPUPositions.contains(playerPositions)){
+            while (playerPositions.contains(PlayerPosition) || CPUPositions.contains(playerPositions)
+            || CPUPositions.contains(PlayerPosition)){
                 System.out.println("Position taken!!! Enter a correct position!");
                 PlayerPosition = scanner.nextInt();
             }
